@@ -1,0 +1,22 @@
+int main()
+{
+    Complejo c1(1,2);
+    Complejo c2(2,1);
+   // Complejo c4(2,1);
+
+    Complejo c3 = c1 + c2;
+//coordenadas cartesianas y polares clase punto
+    cout<< c3 << " = " << c1 << " + " << c2 << endl;
+//c1 +c2 this
+//c1+4 this
+//4 + c1  friend  todo operador se lanza en la clase de la izq ,va con friend
+    Complejo c4 = 5 * c3;
+    cout << "c4="  << c4<<endl;
+   // cout<< c4 << " = " << 5 << " * " << c3 << endl;
+   // Complejo c5 = c3 * c4;
+ //  cout << "c5=("  << c5.getComplejoReal()<<","<<c5.getComplejoImaginario() << ")"<<endl;
+
+//    cout<< c5<< " = " << c3 << " * " << c4 << endl;
+
+    return 0;
+}
