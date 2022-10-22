@@ -12,7 +12,6 @@ Cadena::Cadena()
 
 Cadena::~Cadena()
 {
-    //cout << "Ejecutando Destructor" << endl;
     delete[] cadenaC;
 }
 
@@ -42,31 +41,13 @@ ostream& operator <<(ostream& os, const Cadena& cadena)
     return os;
 }
 
-//    is>> cadena.cadenaC;
-istream& operator >>(istream& is, Cadena& cadena)
+istream& operator >> (istream& input, Cadena& objCadena)
 {
-    queue<char> colaChars;
-    char c;
-
-    while((c = is.get()) != '\n' && c != EOF)
-        colaChars.push(c);
-
-    if(strlen(cadena.cadenaC) != colaChars.size())
-    {
-        delete [] cadena.cadenaC;
-        cadena.cadenaC = new char[colaChars.size() + 1];
-    }
-
-   	int i = 0;
-    while(!colaChars.empty())
-    {
-        cadena.cadenaC[i++] = colaChars.front();
-        colaChars.pop();
-    }
-
-    cadena.cadenaC[i] = '\0';
-
-    return is;
+    char cadIngreso[TAM_CAD];
+    input.getline(cadIngreso, TAM_CAD);
+    objCadena.cadenaC = new char [strlen(cadIngreso) + 1];
+    strcpy(objCadena.cadenaC, cadIngreso);
+    return input;
 }
 
 Cadena Cadena::operator=(const Cadena &cadena)
