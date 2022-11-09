@@ -1,161 +1,149 @@
 #include "Fecha.h"
-#include <iostream>
-
-
-const int Fecha::acumDiasMes[14] = {0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
-
-const int Fecha::acumDiasMesBisiesto[14] = {0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
+#include "FechaInvalidaException.h"
 
 Fecha::Fecha()
 {
-    diaRel=0;
+    this->dia=1;
+    this->mes=1;
+    this->anio=1601;
 }
 
 Fecha::Fecha(int dia, int mes, int anio)
 {
-    diaRel= dmaADiaRel(dia,mes,anio);
-}
-
-Fecha Fecha::operator +(int dias) const
-{
-    Fecha fechaSuma(*this); //constructor de copia disponible por defecto, NO es necesario implementarlo. , se hace una copia de lo q apunta this
-    fechaSuma.diaRel += dias;
-
-    ///es lo mismo que, pero esto es menos optimo
-//    Fecha fechaSuma;
-//    fechaSuma.diaRel=this->diaRel + dias;
-
-    return fechaSuma;
-}
-
-
-Fecha Fecha::operator -(int dias) const
-{
-    Fecha fechaResta(*this);
-    fechaResta.diaRel -= dias;
-
-    if(fechaResta.diaRel < 1)
-        throw "Fecha inválida: Quiere restar más días de los permitidos.";
-
-    return fechaResta;
-}
-
-
-int Fecha::operator -(const Fecha& fecha) const
-{
-    return this->diaRel - fecha.diaRel; //a mi fecha restale la fecha del parametro de entrada
-}
-
-
-Fecha& Fecha::operator ++() // Preincremento
-{
-    ++this->diaRel;
-    return *this;
-}
-
-
-Fecha Fecha::operator ++(int) // Posincremento
-{
-    Fecha fechaAnterior(*this);
-    ++this->diaRel;
-    return fechaAnterior;
-}
-
-
-
-int Fecha::dmaADiaRel(int dia,int mes,int anio)
-{
     if(!esFechaValida(dia,mes,anio))
-        throw FECHA_INVALIDA;
-
-    int cantAnios = anio - ANIO_BASE;
-    int diasAniosCompl = cantAnios * 365 + cantAnios / 4 - cantAnios / 100 + cantAnios / 400;
-    this->diaRel = diasAniosCompl + diaDelAnio(dia, mes, anio);
-    return diaRel;
+        throw FechaInvalidaException();
+    this->dia=dia;
+    this->mes=mes;
+    this->anio=anio;
 }
-
 
 int Fecha::cantDiasMes(int mes, int anio)
 {
     static const int diasMes[13]={0,31,28,31,30,31,30,31,31,30,31,30,31}; //static en una variable solo se reserva en memoria una sola vez no cada vez q entre a la funcion
-    if(mes==2 && esBisiesto(anio))
+    if(mes==2 && Bisiesto(anio))
         return 29;
     else
         return diasMes[mes];
 }
-///ESTE METODO SE ELIMINA Y SE UTILIZA UNA SOBRECARGA DEL +
-//Fecha Fecha::sumarDias(int dias) const
-//{
-//    Fecha fsuma; //creo una fecha nueva
-//    fsuma.diaRel=diaRel+dias;
-//    return fsuma;
-//}
 
-//Fecha Fecha::restarDias(int dias)
-//{
-//    Fecha fresta;
-//    fresta.diaRel=diaRel-dias;
-//    return fresta;
-//}
-
-
-//lo q retorna, la clase a la q pertence, el nombre, parametros q recibe
-//int Fecha::diferenciaDias(Fecha fecha) const
-//{
-//    return diaRel - fecha.diaRel;
-//}
-//dia de la semana, el primer dia es lunes y el ultimo es el domingo, la fecha base es 1/1/1601
-int Fecha::diaDeLaSemana() const
-{
-    return (diaRel-1)%7;
-}
-
-void Fecha::getDma(int& dia, int& mes, int& anio) const
-{
-    int cantAniosComplCalc = this->diaRel / 365;
-
-    int diasAniosComplCalc;
-
-    diasAniosComplCalc =
-        cantAniosComplCalc * 365 + cantAniosComplCalc / 4 - cantAniosComplCalc / 100 + cantAniosComplCalc / 400;
-
-    while(diasAniosComplCalc >= this->diaRel)
-    {
-        cantAniosComplCalc--;
-        diasAniosComplCalc =
-            cantAniosComplCalc * 365 + cantAniosComplCalc / 4 - cantAniosComplCalc / 100 + cantAniosComplCalc / 400;
-    }
-
-    anio = cantAniosComplCalc + ANIO_BASE;
-
-    int diaDelAnio = this->diaRel - diasAniosComplCalc;
-
-    diaDelAnioADiaMes(diaDelAnio, anio, &dia, &mes);
-}
-
-void Fecha::diaDelAnioADiaMes(int diaDelAnio, int anio, int* dia, int* mes)
-{
-    const int* acumDiasMes = esBisiesto(anio) ? acumDiasMesBisiesto : Fecha::acumDiasMes;
-
-    int m = 1;
-    while(diaDelAnio > acumDiasMes[m])
-        m++;
-
-    m--;
-    *mes = m;
-
-    *dia = diaDelAnio - acumDiasMes[m];
-}
 
 ostream& operator <<(ostream& os, const Fecha& fecha)
 {
-    int dia, mes, anio;
-    fecha.getDma(dia, mes, anio);
-    os << dia << '/' << mes << '/' << anio;
+    os<< fecha.dia << '/' << fecha.mes << '/'<<fecha.anio;
     return os;
 }
 
-istream& operator >>(istream& is, Fecha& fecha)
+bool Fecha::esBisiesto()
 {
+    if(Bisiesto(this->anio))
+        return 1;
+    else
+        return 0;
+}
 
+bool Fecha::pasoUnAnio(Fecha &fecha)
+{
+    if(fecha.anio < this->anio)
+    {
+        if(fecha.mes < this->mes)
+        {
+            if(fecha.dia < this->dia)
+                return 1;
+        }
+    }
+    return 0;
+
+}
+
+int Fecha::cantidadDias(Fecha& fecha)
+{
+   int dias=0,i;
+    int anios=0;
+    int meses=0;
+    int cont=0;
+    int vecanios[100]={0};
+    static const int diasMes[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+
+    anios=this->anio-fecha.anio;
+    for(i=0;i<anios;i++)
+    {
+        vecanios[i]=fecha.anio+i;
+        if(Bisiesto(vecanios[i]))
+            cont++;
+    }
+
+
+    dias+=anios*365+cont; //2190+2
+
+    meses=this->mes-fecha.mes;
+    if(meses<0) meses+=(-meses)*2;
+
+    for(i=0;i<meses;i++)
+    {
+        if(fecha.mes+i+1>12)
+        {
+            fecha.mes=1;
+        }
+        dias-=diasMes[fecha.mes+i+1];
+
+    }
+
+    dias+=this->dia- fecha.dia;
+
+    return dias;
+}
+
+
+void Fecha::operator +=(int dias)
+{
+    int validar;
+    validar=cantDiasMes(this->mes,this->anio);
+    this->dia+=dias;
+
+    while(validar<this->dia)
+    {
+        this->dia-=validar;
+        if(this->mes==12)
+        {
+            this->mes=1;
+            this->anio++;
+        }
+        else
+            this->mes++;
+        validar=cantDiasMes(this->mes,this->anio);
+    }
+}
+
+bool Fecha::antes(Fecha fecha) const
+{
+    if(this->anio<fecha.anio)
+        return 1;
+    else
+    {
+        if(this->anio>fecha.anio)
+            return 0;
+        else
+        {
+            if(this->mes<fecha.mes)
+                return 1;
+            else
+            {
+                if(this->mes>fecha.mes)
+                    return 0;
+                else
+                {
+                    if(this->dia< fecha.dia)
+                        return 1;
+                    else
+                        return 0;
+                }
+            }
+        }
+    }
+}
+
+
+bool Fecha::despues(Fecha fecha) const
+{
+    return !this->antes(fecha);
 }
