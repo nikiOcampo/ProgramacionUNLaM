@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1665255502 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\ejercicio 6.9\persona.cpp
+	"Persona.h"
+	<string.h>
+
+1665255532 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\ejercicio 6.9\persona.h
+	<iostream>
+	<string.h>
+
