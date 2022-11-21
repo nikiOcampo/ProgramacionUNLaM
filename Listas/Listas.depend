@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\listas\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1666182226 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\listas\lista.c
+	"Lista.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1666182171 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\listas\lista.h
+
