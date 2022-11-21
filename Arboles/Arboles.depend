@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1667938949 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\arboles\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arbol.h"
+
+1668884120 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\arboles\arbol.h
+
+1668884120 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\arboles\arbol.c
+	<stdio.h>
+	<stdlib.h>
+	"arbol.h"
+	<string.h>
+	<math.h>
+
+1668884120 source:c:\users\claud\desktop\16 programaciÃ³n\arboles\arbol.c
+	<stdio.h>
+	<stdlib.h>
+	"arbol.h"
+	<string.h>
+	<math.h>
+
+1668884120 c:\users\claud\desktop\16 programaciÃ³n\arboles\arbol.h
+
+1667938949 source:c:\users\claud\desktop\16 programaciÃ³n\arboles\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arbol.h"
+
