@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1666446801 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\racional\racional.cpp
+	"Racional.h"
+	<iostream>
+
+1666446801 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\racional\racional.h
+	<iostream>
+	<string.h>
+
+1666446501 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\racional\main.cpp
+	<iostream>
+	"Racional.h"
+
