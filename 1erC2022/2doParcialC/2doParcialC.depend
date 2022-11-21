@@ -1,0 +1,176 @@
+# depslib dependency file v1.0
+1657067009 source:c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\2doparcialc\arbol.c
+	<tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<arbol.h>
+	"utilitarias.h"
+
+1638161045 c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\include\tipos.h
+
+1657064917 c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\include\arbol.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+
+1657066993 source:c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+
+1657063160 c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+	<tipos.h>
+
+1638161862 c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\include\varias.h
+
+1657064917 source:c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+	<arbol.h>
+
+1657577951 source:c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\2doparcialc\arbol.c
+	<tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<arbol.h>
+	"utilitarias.h"
+
+1657490638 c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\include\tipos.h
+
+1657312605 c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\include\arbol.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+
+1657063160 c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+	<tipos.h>
+
+1657577989 source:c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+
+1638161862 c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\include\varias.h
+
+1657576255 source:c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+	<arbol.h>
+
+1668712866 source:c:\users\leonel\mi unidad\unlam\programacion\parciales\01)modelos_que_hice\2do parcial\berti_rodrigo\2doparcialc\arbol.c
+	<tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<arbol.h>
+	"utilitarias.h"
+
+1657490638 c:\users\leonel\mi unidad\unlam\programacion\parciales\01)modelos_que_hice\2do parcial\berti_rodrigo\include\tipos.h
+
+1668711989 c:\users\leonel\mi unidad\unlam\programacion\parciales\01)modelos_que_hice\2do parcial\berti_rodrigo\include\arbol.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+
+1668706806 c:\users\leonel\mi unidad\unlam\programacion\parciales\01)modelos_que_hice\2do parcial\berti_rodrigo\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+	<tipos.h>
+
+1668712145 source:c:\users\leonel\mi unidad\unlam\programacion\parciales\01)modelos_que_hice\2do parcial\berti_rodrigo\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+
+1638161862 c:\users\leonel\mi unidad\unlam\programacion\parciales\01)modelos_que_hice\2do parcial\berti_rodrigo\include\varias.h
+
+1668714837 source:c:\users\leonel\mi unidad\unlam\programacion\parciales\01)modelos_que_hice\2do parcial\berti_rodrigo\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+	<arbol.h>
+
+1668971834 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programaci髇\1erc2022\2doparcialc\arbol.c
+	<tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<arbol.h>
+	"utilitarias.h"
+
+1657490638 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programaci髇\1erc2022\include\tipos.h
+
+1668909383 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programaci髇\1erc2022\include\arbol.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+
+1668962035 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programaci髇\1erc2022\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+	<tipos.h>
+
+1669037930 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programaci髇\1erc2022\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+
+1638161862 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programaci髇\1erc2022\include\varias.h
+
+1668973544 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programaci髇\1erc2022\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+	<arbol.h>
+
+1668971834 source:c:\users\claud\desktop\16 programaci贸n\1erc2022\2doparcialc\arbol.c
+	<tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<arbol.h>
+	"utilitarias.h"
+
+1657490638 c:\users\claud\desktop\16 programaci贸n\1erc2022\include\tipos.h
+
+1668909383 c:\users\claud\desktop\16 programaci贸n\1erc2022\include\arbol.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+
+1668962035 c:\users\claud\desktop\16 programaci贸n\1erc2022\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+	<tipos.h>
+
+1668972172 source:c:\users\claud\desktop\16 programaci贸n\1erc2022\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+
+1638161862 c:\users\claud\desktop\16 programaci贸n\1erc2022\include\varias.h
+
+1668973544 source:c:\users\claud\desktop\16 programaci贸n\1erc2022\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+	<arbol.h>
+

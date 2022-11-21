@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1657065495 source:c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\2doparcialcpp\main.cpp
+	<iostream>
+	<windows.h>
+	"HoraDelDia.h"
+
+1657065781 c:\users\laboratorios.unlmlab\desktop\nueva carpeta\berti_rodrigo\2doparcialcpp\horadeldia.h
+
+1657486340 source:c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\2doparcialcpp\main.cpp
+	<iostream>
+	<windows.h>
+	"HoraDelDia.h"
+	"HoraDelDiaExc.h"
+
+1657486557 c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\2doparcialcpp\horadeldia.h
+
+1657487614 source:c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\2doparcialcpp\horadeldia.cpp
+	<iostream>
+	<windows.h>
+	"HoraDelDia.h"
+	"HoraDelDiaExc.h"
+
+1657487450 c:\users\umabe\onedrive\desktop\1er cuatri 2022\ejercicios resueltos\2do parciales progra\berti_rodrigo\2doparcialcpp\horadeldiaexc.h
+	"HoraDelDia.h"
+	<string>
+	<iostream>
+	<exception>
+
