@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1669065900 source:c:\users\usuario\downloads\horadeldia\hora.cpp
+	"Hora.h"
+	"HoraException.h"
+	<iostream>
+
+1669065696 c:\users\usuario\downloads\horadeldia\hora.h
+	<iostream>
+
+1669064792 source:c:\users\usuario\downloads\horadeldia\horaexception.cpp
+	"HoraException.h"
+
+1669064738 c:\users\usuario\downloads\horadeldia\horaexception.h
+	<exception>
+
+1669065882 source:c:\users\usuario\downloads\horadeldia\main.cpp
+	<iostream>
+	"Hora.h"
+	"HoraException.h"
+
+1669069647 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\horadeldia\hora.cpp
+	"Hora.h"
+	"HoraException.h"
+	<iostream>
+
+1669069647 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\horadeldia\hora.h
+	<iostream>
+
+1669064738 c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\horadeldia\horaexception.h
+	<exception>
+
+1669064792 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\horadeldia\horaexception.cpp
+	"HoraException.h"
+
+1669069613 source:c:\users\usuario\desktop\nicole ocampo\00 unlam\16 programación\tcp\horadeldia\main.cpp
+	<iostream>
+	<windows.h>
+	"Hora.h"
+	"HoraException.h"
+
